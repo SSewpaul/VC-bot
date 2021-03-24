@@ -33,10 +33,8 @@ async def on_voice_state_update(member,before,after):
           if(chat.name == vc.name):
             chat_id[chat.id]=i
             i+=1
-            print(chat_id)
       global log
       log= [[] for _ in range(i)]
-      print(log)
 
   elif before.channel and not after.channel:  #leaving channel
 
